@@ -1,13 +1,28 @@
+# 忽略所有文件
 *.*
+
+# 忽略所有文件夹中的单独文件
 *
+
+# 例外处理：保留根目录和指定目录的所有内容
 !*/
-!/nemu/*
-!/nexus-am/*
-!/nanos-lite/*
-!/navy-apps/*
-!/npc/*
+
+# 只保留特定目录的内容
+!/nemu/
+!/nexus-am/
+!/nanos-lite/
+!/navy-apps/
+!/npc/
 !Makefile
 !README.md
 !.gitignore
 !init.sh
+
+# Verilator构建生成的目录
+npc/obj_dir/
+
+# 仿真生成的波形文件
+waveform.vcd
+
+# 忽略nvboard文件夹
 /nvboard
